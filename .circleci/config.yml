@@ -2,7 +2,7 @@ version: 2
 jobs:
   validate:
     docker:
-      - image: hashicorp/packer:1.1.1
+      - image: hashicorp/packer:latest
     working_directory: ~/packer
     steps:
       - checkout
@@ -11,7 +11,7 @@ jobs:
           command: packer validate packer.pkr.hcl
   build-base:
     docker:
-      - image: hashicorp/packer:1.1.1
+      - image: hashicorp/packer:latest
     working_directory: ~/packer
     steps:
       - checkout
