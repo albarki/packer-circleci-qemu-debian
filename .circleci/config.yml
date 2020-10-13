@@ -11,7 +11,7 @@ jobs:
           command: packer validate packer.pkr.hcl
   build-base:
     machine:
-      - image: ubuntu-1604:202007-01
+      - image: "ubuntu-1604:202007-01"
     working_directory: ~/packer
     steps:
       - checkout
