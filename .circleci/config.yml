@@ -10,13 +10,16 @@ jobs:
           name: Validate base
           command: packer validate packer.pkr.hcl
   build-base:
-    docker:
-      - image: hashicorp/packer:latest
+    machine:
+      - image: ubuntu-1604:202007-01
     working_directory: ~/packer
     steps:
       - checkout
       - attach_workspace:
-          at: ~/packer
+          at: ~/packera
+      - install-qemeu:
+          name: install qemeu
+          command: sudo apt-get install qemu-kvm libvirt-bin virtinst bridge-utils cpu-checker && kvm-ok
       - run:
           name: Build base
           command: packer build packer.pkr.hcl
