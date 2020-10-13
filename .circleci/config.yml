@@ -19,7 +19,7 @@ jobs:
           at: ~/packera
       - install-qemeu:
           name: install qemeu
-          command: sudo apt-get install qemu-kvm libvirt-bin virtinst bridge-utils cpu-checker && kvm-ok
+          command: sudo apt-get install qemu-kvm libvirt-bin virtinst bridge-utils cpu-checker
       - run:
           name: Build base
           command: packer build packer.pkr.hcl
