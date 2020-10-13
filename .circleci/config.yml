@@ -1,37 +1,13 @@
-version: 2
-jobs:
-  validate:
-    docker:
-      - image: hashicorp/packer:latest
-    working_directory: ~/packer
-    steps:
-      - checkout
-      - run:
-          name: Validate base
-          command: packer validate packer.pkr.hcl
-  build-base:
-    machine:
-      - image: hashicorp/packer:latest
-    working_directory: ~/packer
-    steps:
-      - checkout
-      - attach_workspace:
-          at: ~/packer
-      - run:
-          name: Build base
-          command: packer build packer.pkr.hcl
-          no_output_timeout: 40m
-      - persist_to_workspace:
-          root: .
-          paths:
-            - manifest-base.json
-      - store_artifacts:
-          path: manifest-base.json
+# Use the latest 2.1 version of CircleCI pipeline process engine. See: https://circleci.com/docs/2.0/configuration-reference
+version: 2.1
+# Use a package of configuration called an orb.
+orbs:
+  # Declare a dependency on the welcome-orb
+  welcome: circleci/welcome-orb@0.4.1
+# Orchestrate or schedule a set of jobs
 workflows:
-  version: 2
-  build-and-deploy:
+  # Name the workflow "welcome"
+  welcome:
+    # Run the welcome/run job in its own container
     jobs:
-      - validate
-      - build-base:
-          requires:
-            - validate
+      - welcome/run
