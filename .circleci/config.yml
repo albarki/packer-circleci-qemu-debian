@@ -16,7 +16,7 @@ jobs:
     steps:
       - checkout
       - attach_workspace:
-          at: ~/packera
+          at: ~/packer
       - run:
           name: Build base
           command: packer build packer.pkr.hcl
