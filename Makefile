@@ -31,9 +31,5 @@ validate: $(PACKER_FILE)
 $(KITCHEN_DISK): $(KITCHEN_BASE_IMAGE)
 	qemu-img create -f qcow2 -o backing_file=$< $@ 10G
 
-test create setup converge destroy verify list login: .gems
-	OUTPUT=./$(OUTPUT) bundle exec kitchen $@
 
-.gems: Gemfile
-	bundle install --path $@
-	touch $@ # Be sure the target is newer than the source
+
