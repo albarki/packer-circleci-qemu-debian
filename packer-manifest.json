@@ -1,0 +1,33 @@
+{
+  "builds": [
+    {
+      "name": "debian",
+      "builder_type": "qemu",
+      "build_time": 1602512423,
+      "files": [
+        {
+          "name": "output/debian-10.5.0-1.qcow2",
+          "size": 452795904
+        }
+      ],
+      "artifact_id": "VM",
+      "packer_run_uuid": "fc98ef59-7f1c-9ca8-ab47-725be3993975",
+      "custom_data": null
+    },
+    {
+      "name": "debian",
+      "builder_type": "qemu",
+      "build_time": 1602570577,
+      "files": [
+        {
+          "name": "output/debian-10.5.0-1.qcow2",
+          "size": 489553920
+        }
+      ],
+      "artifact_id": "VM",
+      "packer_run_uuid": "39084cd5-6846-ee17-a192-2c3fa1b610f6",
+      "custom_data": null
+    }
+  ],
+  "last_run_uuid": "39084cd5-6846-ee17-a192-2c3fa1b610f6"
+}
