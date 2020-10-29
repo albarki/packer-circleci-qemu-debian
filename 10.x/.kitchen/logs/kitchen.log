@@ -1,3 +1,0 @@
-I, [2020-10-29T13:05:14.812674 #441745]  INFO -- Kitchen: -----> Starting Test Kitchen (v2.7.2)
-I, [2020-10-29T13:05:15.321920 #441745]  INFO -- Kitchen: -----> Destroying <default-test>...
-I, [2020-10-29T13:05:15.325859 #441745]  INFO -- Kitchen: -----> Test Kitchen is finished. (0m0.51s)
