@@ -12,5 +12,4 @@ jobs:
 
       - run:
           name: Validate base
-          command: packer validate 10.x/packer.pkr.hcl
-
+          command: cd 10.x && make all
