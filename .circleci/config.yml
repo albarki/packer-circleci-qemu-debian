@@ -7,6 +7,10 @@ jobs:
     steps:
       - checkout
       - run:
+          name: install required packages
+          command: export VER="1.6.4" && wget https://releases.hashicorp.com/packer/${VER}/packer_${VER}_linux_amd64.zip && unzip packer_${VER}_linux_amd64.zip && sudo mv packer /usr/local/bin && packer version
+
+      - run:
           name: Validate base
           command: packer validate 10.x/packer.pkr.hcl
 
