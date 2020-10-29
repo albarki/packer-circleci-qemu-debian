@@ -1,3 +1,77 @@
-I, [2020-10-29T10:32:49.897979 #427096]  INFO -- Kitchen: -----> Starting Test Kitchen (v2.7.2)
-I, [2020-10-29T10:32:50.401800 #427096]  INFO -- Kitchen: -----> Destroying <default-test>...
-I, [2020-10-29T10:32:50.405803 #427096]  INFO -- Kitchen: -----> Test Kitchen is finished. (0m0.51s)
+I, [2020-10-29T12:16:16.772390 #438598]  INFO -- Kitchen: -----> Starting Test Kitchen (v2.7.2)
+I, [2020-10-29T12:16:17.344741 #438598]  INFO -- Kitchen: -----> Creating <default-test>...
+E, [2020-10-29T12:16:17.345830 #438598] ERROR -- Kitchen: ------Exception-------
+E, [2020-10-29T12:16:17.345853 #438598] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2020-10-29T12:16:17.345865 #438598] ERROR -- Kitchen: Message: 1 actions failed.
+>>>>>>     Create failed on instance <default-test>.  Please see .kitchen/logs/default-test.log for more details
+E, [2020-10-29T12:16:17.345875 #438598] ERROR -- Kitchen: ----------------------
+E, [2020-10-29T12:16:17.345883 #438598] ERROR -- Kitchen: ------Backtrace-------
+E, [2020-10-29T12:16:17.345891 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/test-kitchen-2.7.2/lib/kitchen/command.rb:181:in `report_errors'
+E, [2020-10-29T12:16:17.345901 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/test-kitchen-2.7.2/lib/kitchen/command.rb:172:in `run_action'
+E, [2020-10-29T12:16:17.345909 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/test-kitchen-2.7.2/lib/kitchen/command/action.rb:35:in `block in call'
+E, [2020-10-29T12:16:17.345970 #438598] ERROR -- Kitchen: /home/albarki/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0/benchmark.rb:293:in `measure'
+E, [2020-10-29T12:16:17.345979 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/test-kitchen-2.7.2/lib/kitchen/command/action.rb:33:in `call'
+E, [2020-10-29T12:16:17.345988 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/test-kitchen-2.7.2/lib/kitchen/cli.rb:52:in `perform'
+E, [2020-10-29T12:16:17.345996 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/test-kitchen-2.7.2/lib/kitchen/cli.rb:198:in `block (2 levels) in <class:CLI>'
+E, [2020-10-29T12:16:17.346005 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/thor-1.0.1/lib/thor/command.rb:27:in `run'
+E, [2020-10-29T12:16:17.346013 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/thor-1.0.1/lib/thor/invocation.rb:127:in `invoke_command'
+E, [2020-10-29T12:16:17.346021 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/thor-1.0.1/lib/thor.rb:392:in `dispatch'
+E, [2020-10-29T12:16:17.346029 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/thor-1.0.1/lib/thor/base.rb:485:in `start'
+E, [2020-10-29T12:16:17.346038 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/test-kitchen-2.7.2/bin/kitchen:11:in `block in <top (required)>'
+E, [2020-10-29T12:16:17.346046 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/test-kitchen-2.7.2/lib/kitchen/errors.rb:170:in `with_friendly_errors'
+E, [2020-10-29T12:16:17.346054 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/test-kitchen-2.7.2/bin/kitchen:11:in `<top (required)>'
+E, [2020-10-29T12:16:17.346062 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/bin/kitchen:23:in `load'
+E, [2020-10-29T12:16:17.346070 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/bin/kitchen:23:in `<main>'
+E, [2020-10-29T12:16:17.346078 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/bin/ruby_executable_hooks:24:in `eval'
+E, [2020-10-29T12:16:17.346087 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/bin/ruby_executable_hooks:24:in `<main>'
+E, [2020-10-29T12:16:17.346095 #438598] ERROR -- Kitchen: ----End Backtrace-----
+E, [2020-10-29T12:16:17.346109 #438598] ERROR -- Kitchen: -Composite Exception--
+E, [2020-10-29T12:16:17.346118 #438598] ERROR -- Kitchen: Class: Kitchen::InstanceFailure
+E, [2020-10-29T12:16:17.346126 #438598] ERROR -- Kitchen: Message: Create failed on instance <default-test>.  Please see .kitchen/logs/default-test.log for more details
+E, [2020-10-29T12:16:17.346134 #438598] ERROR -- Kitchen: ----------------------
+E, [2020-10-29T12:16:17.346144 #438598] ERROR -- Kitchen: ------Backtrace-------
+E, [2020-10-29T12:16:17.346158 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/kitchen-qemu-0.2.11/lib/kitchen/driver/qemu.rb:169:in `create'
+E, [2020-10-29T12:16:17.346171 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/test-kitchen-2.7.2/lib/kitchen/instance.rb:495:in `public_send'
+E, [2020-10-29T12:16:17.346180 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/test-kitchen-2.7.2/lib/kitchen/instance.rb:495:in `block in perform_action'
+E, [2020-10-29T12:16:17.346188 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/test-kitchen-2.7.2/lib/kitchen/instance.rb:563:in `synchronize_or_call'
+E, [2020-10-29T12:16:17.346197 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/test-kitchen-2.7.2/lib/kitchen/instance.rb:524:in `block in action'
+E, [2020-10-29T12:16:17.346205 #438598] ERROR -- Kitchen: /home/albarki/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0/benchmark.rb:293:in `measure'
+E, [2020-10-29T12:16:17.346214 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/test-kitchen-2.7.2/lib/kitchen/instance.rb:523:in `action'
+E, [2020-10-29T12:16:17.346222 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/test-kitchen-2.7.2/lib/kitchen/instance.rb:495:in `perform_action'
+E, [2020-10-29T12:16:17.346231 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/test-kitchen-2.7.2/lib/kitchen/instance.rb:404:in `create_action'
+E, [2020-10-29T12:16:17.346239 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/test-kitchen-2.7.2/lib/kitchen/instance.rb:392:in `block (2 levels) in transition_to'
+E, [2020-10-29T12:16:17.346248 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/test-kitchen-2.7.2/lib/kitchen/lifecycle_hooks.rb:44:in `run_with_hooks'
+E, [2020-10-29T12:16:17.346256 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/test-kitchen-2.7.2/lib/kitchen/instance.rb:391:in `block in transition_to'
+E, [2020-10-29T12:16:17.346265 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/test-kitchen-2.7.2/lib/kitchen/instance.rb:390:in `each'
+E, [2020-10-29T12:16:17.346273 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/test-kitchen-2.7.2/lib/kitchen/instance.rb:390:in `transition_to'
+E, [2020-10-29T12:16:17.346282 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/test-kitchen-2.7.2/lib/kitchen/instance.rb:128:in `create'
+E, [2020-10-29T12:16:17.346290 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/test-kitchen-2.7.2/lib/kitchen/command.rb:195:in `public_send'
+E, [2020-10-29T12:16:17.346298 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/test-kitchen-2.7.2/lib/kitchen/command.rb:195:in `run_action_in_thread'
+E, [2020-10-29T12:16:17.346307 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/test-kitchen-2.7.2/lib/kitchen/command.rb:166:in `block (2 levels) in run_action'
+E, [2020-10-29T12:16:17.346319 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/logging-2.3.0/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2020-10-29T12:16:17.346328 #438598] ERROR -- Kitchen: ----End Backtrace-----
+E, [2020-10-29T12:16:17.346336 #438598] ERROR -- Kitchen: ---Nested Exception---
+E, [2020-10-29T12:16:17.346344 #438598] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2020-10-29T12:16:17.346352 #438598] ERROR -- Kitchen: Message: QEMU instance <default-test> already running.
+E, [2020-10-29T12:16:17.346360 #438598] ERROR -- Kitchen: ----------------------
+E, [2020-10-29T12:16:17.346368 #438598] ERROR -- Kitchen: ------Backtrace-------
+E, [2020-10-29T12:16:17.346376 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/kitchen-qemu-0.2.11/lib/kitchen/driver/qemu.rb:169:in `create'
+E, [2020-10-29T12:16:17.346385 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/test-kitchen-2.7.2/lib/kitchen/instance.rb:495:in `public_send'
+E, [2020-10-29T12:16:17.346393 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/test-kitchen-2.7.2/lib/kitchen/instance.rb:495:in `block in perform_action'
+E, [2020-10-29T12:16:17.346402 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/test-kitchen-2.7.2/lib/kitchen/instance.rb:563:in `synchronize_or_call'
+E, [2020-10-29T12:16:17.346410 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/test-kitchen-2.7.2/lib/kitchen/instance.rb:524:in `block in action'
+E, [2020-10-29T12:16:17.346419 #438598] ERROR -- Kitchen: /home/albarki/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0/benchmark.rb:293:in `measure'
+E, [2020-10-29T12:16:17.346427 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/test-kitchen-2.7.2/lib/kitchen/instance.rb:523:in `action'
+E, [2020-10-29T12:16:17.346436 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/test-kitchen-2.7.2/lib/kitchen/instance.rb:495:in `perform_action'
+E, [2020-10-29T12:16:17.346444 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/test-kitchen-2.7.2/lib/kitchen/instance.rb:404:in `create_action'
+E, [2020-10-29T12:16:17.346453 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/test-kitchen-2.7.2/lib/kitchen/instance.rb:392:in `block (2 levels) in transition_to'
+E, [2020-10-29T12:16:17.346461 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/test-kitchen-2.7.2/lib/kitchen/lifecycle_hooks.rb:44:in `run_with_hooks'
+E, [2020-10-29T12:16:17.346470 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/test-kitchen-2.7.2/lib/kitchen/instance.rb:391:in `block in transition_to'
+E, [2020-10-29T12:16:17.346479 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/test-kitchen-2.7.2/lib/kitchen/instance.rb:390:in `each'
+E, [2020-10-29T12:16:17.346487 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/test-kitchen-2.7.2/lib/kitchen/instance.rb:390:in `transition_to'
+E, [2020-10-29T12:16:17.346495 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/test-kitchen-2.7.2/lib/kitchen/instance.rb:128:in `create'
+E, [2020-10-29T12:16:17.346504 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/test-kitchen-2.7.2/lib/kitchen/command.rb:195:in `public_send'
+E, [2020-10-29T12:16:17.346512 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/test-kitchen-2.7.2/lib/kitchen/command.rb:195:in `run_action_in_thread'
+E, [2020-10-29T12:16:17.346523 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/test-kitchen-2.7.2/lib/kitchen/command.rb:166:in `block (2 levels) in run_action'
+E, [2020-10-29T12:16:17.346534 #438598] ERROR -- Kitchen: /home/albarki/projects/packer-circleci-qemu-debian/10.x/.gems/ruby/2.7.0/gems/logging-2.3.0/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2020-10-29T12:16:17.346566 #438598] ERROR -- Kitchen: ----End Backtrace-----

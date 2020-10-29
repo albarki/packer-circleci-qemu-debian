@@ -7,4 +7,4 @@ set -x
 IMAGE_PATH=$1
 
 cd $(dirname $IMAGE_PATH)
-sha256sum $(basename $IMAGE_PATH) > SHA256SUMS
+sha256sum $(basename $IMAGE_PATH) > $(basename $IMAGE_PATH)-SHA256SUMS
