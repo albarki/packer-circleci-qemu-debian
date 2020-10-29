@@ -1,7 +1,7 @@
 PACKER_FILE = packer.pkr.hcl
 
 OUTPUT_DIR = output
-VERSION = $(shell git describe)
+VERSION = 10.x
 OUTPUT_NAME = debian-$(VERSION).qcow2
 OUTPUT = $(OUTPUT_DIR)/$(OUTPUT_NAME)
 
@@ -31,5 +31,9 @@ validate: $(PACKER_FILE)
 $(KITCHEN_DISK): $(KITCHEN_BASE_IMAGE)
 	qemu-img create -f qcow2 -o backing_file=$< $@ 10G
 
+test create setup converge destroy verify list login: .gems
+	OUTPUT=./$(OUTPUT) bundle exec kitchen $@
 
-
+.gems: Gemfile
+	bundle install --path $@
+	touch $@ # Be sure the target is newer than the source

@@ -82,7 +82,7 @@ source qemu "debian" {
   disk_size   = 8000
   accelerator = "kvm"
 
-  headless = "true"
+  headless = "false"
 
   # Serve the `http` directory via HTTP, used for preseeding the Debian installer.
   http_directory = "http"

@@ -1,0 +1,3 @@
+I, [2020-10-29T10:32:50.401847 #427096]  INFO -- default-test: -----> Destroying <default-test>...
+I, [2020-10-29T10:32:50.402794 #427096]  INFO -- default-test: Quitting QEMU..
+I, [2020-10-29T10:32:50.405354 #427096]  INFO -- default-test: Finished destroying <default-test> (0m0.00s).

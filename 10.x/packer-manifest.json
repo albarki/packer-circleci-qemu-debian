@@ -27,7 +27,21 @@
       "artifact_id": "VM",
       "packer_run_uuid": "39084cd5-6846-ee17-a192-2c3fa1b610f6",
       "custom_data": null
+    },
+    {
+      "name": "debian",
+      "builder_type": "qemu",
+      "build_time": 1603956013,
+      "files": [
+        {
+          "name": "output/debian-10.x.qcow2",
+          "size": 603622912
+        }
+      ],
+      "artifact_id": "VM",
+      "packer_run_uuid": "13c7a292-8ae9-cbbc-1026-80883208259d",
+      "custom_data": null
     }
   ],
-  "last_run_uuid": "39084cd5-6846-ee17-a192-2c3fa1b610f6"
+  "last_run_uuid": "13c7a292-8ae9-cbbc-1026-80883208259d"
 }
