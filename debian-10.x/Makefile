@@ -1,12 +1,12 @@
 PACKER_FILE = packer.pkr.hcl
 
 OUTPUT_DIR = output
-VERSION = 10.x
+VERSION = 10.6.0
 OUTPUT_NAME = debian-$(VERSION).qcow2
 OUTPUT = $(OUTPUT_DIR)/$(OUTPUT_NAME)
 S3BUCKET = xcloud-images
-PACKER_FLAGS = -var output_dir="$(OUTPUT_DIR)" -var output_name="$(OUTPUT_NAME)"
-PACKER_BUILD_FLAGS =
+PACKER_FLAGS = -var output_dir="$(OUTPUT_DIR)" -var output_name="$(OUTPUT_NAME)" -var version="$(VERSION)"
+PACKER_BUILD_FLAGS = 
 
 
 all:

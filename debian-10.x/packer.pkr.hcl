@@ -1,3 +1,8 @@
+variable "version" {
+  type    = string
+  default = "10.6.0"
+}
+
 variable "output_dir" {
   type    = string
   default = "output"
@@ -8,20 +13,24 @@ variable "output_name" {
   default = "debian.qcow2"
 }
 
-variable "source_checksum_url" {
-  type    = string
-  default = "file:https://cdimage.debian.org/cdimage/release/10.6.0/amd64/iso-cd/SHA256SUMS"
+locals {
+  source_checksum_url = "file:https://cdimage.debian.org/cdimage/release/${var.version}/amd64/iso-cd/SHA256SUMS"
+  source_iso = "https://cdimage.debian.org/cdimage/release/${var.version}/amd64/iso-cd/debian-${var.version}-amd64-netinst.iso"
 }
+#variable "source_checksum_url" {
+#  type    = string
+#  default = "file:https://cdimage.debian.org/cdimage/release/${var.version}/amd64/iso-cd/SHA256SUMS"
+#}
 
-variable "source_iso" {
-  description = <<EOF
-* Current images in https://cdimage.debian.org/cdimage/release/
-* Previous versions are in https://cdimage.debian.org/cdimage/archive/
-EOF
-
-  type    = string
-  default = "https://cdimage.debian.org/cdimage/release/10.6.0/amd64/iso-cd/debian-10.6.0-amd64-netinst.iso"
-}
+#variable "source_iso" {
+#  description = <<EOF
+#* Current images in https://cdimage.debian.org/cdimage/release/
+#* Previous versions are in https://cdimage.debian.org/cdimage/archive/
+#EOF
+#
+#  type    = string
+#  default = "https://cdimage.debian.org/cdimage/release/${var.version}/amd64/iso-cd/debian-${var.version}-amd64-netinst.iso"
+#}
 
 variable "ssh_password" {
   type    = string
@@ -72,8 +81,8 @@ EOF
 
 
 source qemu "debian" {
-  iso_url      = "${var.source_iso}"
-  iso_checksum = "${var.source_checksum_url}"
+  iso_url      = "${local.source_iso}"
+  iso_checksum = "${local.source_checksum_url}"
 
   cpus = 1
   # The Debian installer warns with a dialog box if there's not enough memory
