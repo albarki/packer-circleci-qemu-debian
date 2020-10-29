@@ -3,6 +3,10 @@ variable "version" {
   default = "10.6.0"
 }
 
+variable "baseurl" {
+  type    = string
+  default = "https://cdimage.debian.org/cdimage/release"
+}
 variable "output_dir" {
   type    = string
   default = "output"
@@ -14,8 +18,8 @@ variable "output_name" {
 }
 
 locals {
-  source_checksum_url = "file:https://cdimage.debian.org/cdimage/release/${var.version}/amd64/iso-cd/SHA256SUMS"
-  source_iso = "https://cdimage.debian.org/cdimage/release/${var.version}/amd64/iso-cd/debian-${var.version}-amd64-netinst.iso"
+  source_checksum_url = "file:${var.baseurl}/${var.version}/amd64/iso-cd/SHA256SUMS"
+  source_iso = "${var.baseurl}/${var.version}/amd64/iso-cd/debian-${var.version}-amd64-netinst.iso"
 }
 #variable "source_checksum_url" {
 #  type    = string

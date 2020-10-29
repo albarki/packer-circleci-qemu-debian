@@ -1,12 +1,21 @@
 PACKER_FILE = packer.pkr.hcl
 
 OUTPUT_DIR = output
-VERSION = 10.6.0
+## availabe versions, 10.6.0, 10.5.0, 10.4.0, 10.3.0
+VERSION = 10.5.0
 OUTPUT_NAME = debian-$(VERSION).qcow2
+ifeq ($(VERSION), 10.6.0)
+	BASEURL= https://cdimage.debian.org/cdimage/release
+else
+	BASEURL= https://cdimage.debian.org/cdimage/archive
+endif
 OUTPUT = $(OUTPUT_DIR)/$(OUTPUT_NAME)
 S3BUCKET = xcloud-images
-PACKER_FLAGS = -var output_dir="$(OUTPUT_DIR)" -var output_name="$(OUTPUT_NAME)" -var version="$(VERSION)"
+PACKER_FLAGS = -var output_dir="$(OUTPUT_DIR)" -var output_name="$(OUTPUT_NAME)" -var version="$(VERSION)" -var baseurl="$(BASEURL)"
 PACKER_BUILD_FLAGS = 
+
+
+
 
 
 all:
