@@ -9,6 +9,6 @@ make all
 - if you want to build older version, example 10.5.0 please do 
 
 ```
-sed 's/VERSION = 10.6.0/VERSION = 10.5.0/g' debian-10.x/Makefile
+sed -i 's/VERSION = .*/VERSION = 10.5.0/g' debian-10.x/Makefile
 make all
 ```

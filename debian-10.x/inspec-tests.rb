@@ -9,9 +9,9 @@ control 'final-image' do
     its('content') { should match 'DataSourceNone' }
   end
 
-  describe command('systemctl status') do
-    its('stdout') { should match 'State: running' }
-  end
+#  describe command('systemctl status') do
+#    its('stdout') { should match 'State: running' }
+#  end
 
   describe command('systemctl status networking.service') do
     its('stdout') { should match 'ifup: waiting for lock' }
