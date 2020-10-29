@@ -4,13 +4,13 @@ OUTPUT_DIR = output
 VERSION = 10.x
 OUTPUT_NAME = debian-$(VERSION).qcow2
 OUTPUT = $(OUTPUT_DIR)/$(OUTPUT_NAME)
-
+S3BUCKET = xcloud-images
 PACKER_FLAGS = -var output_dir="$(OUTPUT_DIR)" -var output_name="$(OUTPUT_NAME)"
 PACKER_BUILD_FLAGS =
 
 
 all:
-	$(MAKE) $(OUTPUT) create converge verify destroy
+	$(MAKE) $(OUTPUT) create converge verify destroy push
 
 clean:
 	rm -rf $(OUTPUT_DIR)
@@ -37,3 +37,6 @@ test create setup converge destroy verify list login: .gems
 .gems: Gemfile
 	bundle install --path $@
 	touch $@ # Be sure the target is newer than the source
+
+push: 
+	aws s3 sync $(OUTPUT_DIR)/ s3://$(S3BUCKET)/ 
