@@ -34,11 +34,10 @@ apt-get install --no-install-recommends \
     --yes
 
 # These tools are just "nice to have".
-apt-get install --no-install-recommends \
+apt-get  install --no-install-recommends \
     curl \
     less \
     localepurge \
-    python3-distutils \
     rsync \
     vim \
     --yes

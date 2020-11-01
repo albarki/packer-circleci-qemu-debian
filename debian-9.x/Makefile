@@ -2,7 +2,7 @@ PACKER_FILE = packer.pkr.hcl
 
 OUTPUT_DIR = output
 ## availabe versions, 10.6.0, 10.5.0, 10.4.0, 10.3.0
-VERSION = 10.0.0
+VERSION = 9.5.0
 OUTPUT_NAME = debian-$(VERSION).qcow2
 ifeq ($(VERSION), 10.6.0)
 	BASEURL= https://cdimage.debian.org/cdimage/release

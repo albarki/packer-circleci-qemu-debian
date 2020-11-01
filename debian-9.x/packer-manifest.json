@@ -87,73 +87,31 @@
     {
       "name": "debian",
       "builder_type": "qemu",
-      "build_time": 1604206624,
+      "build_time": 1604215996,
       "files": [
         {
-          "name": "output/debian-10.4.0.qcow2",
-          "size": 760807424
+          "name": "output/debian-9.5.0.qcow2",
+          "size": 565890560
         }
       ],
       "artifact_id": "VM",
-      "packer_run_uuid": "aafe7662-0c93-1815-aae2-d0847e02dbbf",
+      "packer_run_uuid": "ba44e130-46e2-0de0-d8b8-772c56f5e89a",
       "custom_data": null
     },
     {
       "name": "debian",
       "builder_type": "qemu",
-      "build_time": 1604207884,
+      "build_time": 1604217253,
       "files": [
         {
-          "name": "output/debian-10.3.0.qcow2",
-          "size": 796374528
+          "name": "output/debian-9.4.0.qcow2",
+          "size": 594739200
         }
       ],
       "artifact_id": "VM",
-      "packer_run_uuid": "de5a14d9-bde1-5595-e6a8-958fbf7a6c18",
-      "custom_data": null
-    },
-    {
-      "name": "debian",
-      "builder_type": "qemu",
-      "build_time": 1604209221,
-      "files": [
-        {
-          "name": "output/debian-10.2.0.qcow2",
-          "size": 848913920
-        }
-      ],
-      "artifact_id": "VM",
-      "packer_run_uuid": "6a34c3b3-5616-902c-09da-17d342d20426",
-      "custom_data": null
-    },
-    {
-      "name": "debian",
-      "builder_type": "qemu",
-      "build_time": 1604210427,
-      "files": [
-        {
-          "name": "output/debian-10.1.0.qcow2",
-          "size": 711110144
-        }
-      ],
-      "artifact_id": "VM",
-      "packer_run_uuid": "546d293b-0a4c-fb6c-22ae-af81e238dcaa",
-      "custom_data": null
-    },
-    {
-      "name": "debian",
-      "builder_type": "qemu",
-      "build_time": 1604212125,
-      "files": [
-        {
-          "name": "output/debian-10.0.0.qcow2",
-          "size": 613691392
-        }
-      ],
-      "artifact_id": "VM",
-      "packer_run_uuid": "a7949bb2-4ccf-f6a3-7356-470e2243e920",
+      "packer_run_uuid": "82824ca2-2803-0ee3-6888-d6b5d96b62a3",
       "custom_data": null
     }
   ],
-  "last_run_uuid": "a7949bb2-4ccf-f6a3-7356-470e2243e920"
+  "last_run_uuid": "82824ca2-2803-0ee3-6888-d6b5d96b62a3"
 }
