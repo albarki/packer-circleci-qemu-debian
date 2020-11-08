@@ -1,0 +1,131 @@
+{
+  "builds": [
+    {
+      "name": "debian",
+      "builder_type": "qemu",
+      "build_time": 1602512423,
+      "files": [
+        {
+          "name": "output/debian-10.5.0-1.qcow2",
+          "size": 452795904
+        }
+      ],
+      "artifact_id": "VM",
+      "packer_run_uuid": "fc98ef59-7f1c-9ca8-ab47-725be3993975",
+      "custom_data": null
+    },
+    {
+      "name": "debian",
+      "builder_type": "qemu",
+      "build_time": 1602570577,
+      "files": [
+        {
+          "name": "output/debian-10.5.0-1.qcow2",
+          "size": 489553920
+        }
+      ],
+      "artifact_id": "VM",
+      "packer_run_uuid": "39084cd5-6846-ee17-a192-2c3fa1b610f6",
+      "custom_data": null
+    },
+    {
+      "name": "debian",
+      "builder_type": "qemu",
+      "build_time": 1603956013,
+      "files": [
+        {
+          "name": "output/debian-10.x.qcow2",
+          "size": 603622912
+        }
+      ],
+      "artifact_id": "VM",
+      "packer_run_uuid": "13c7a292-8ae9-cbbc-1026-80883208259d",
+      "custom_data": null
+    },
+    {
+      "name": "debian",
+      "builder_type": "qemu",
+      "build_time": 1603964014,
+      "files": [
+        {
+          "name": "output/debian-10.x.qcow2",
+          "size": 580321280
+        }
+      ],
+      "artifact_id": "VM",
+      "packer_run_uuid": "9c6389de-f049-5f55-ff9e-b7465623e70e",
+      "custom_data": null
+    },
+    {
+      "name": "debian",
+      "builder_type": "qemu",
+      "build_time": 1603969589,
+      "files": [
+        {
+          "name": "output/debian-10.6.0.qcow2",
+          "size": 603195392
+        }
+      ],
+      "artifact_id": "VM",
+      "packer_run_uuid": "9bd948f6-1b0c-ecea-1ad1-fed23bdaa4d2",
+      "custom_data": null
+    },
+    {
+      "name": "debian",
+      "builder_type": "qemu",
+      "build_time": 1603973197,
+      "files": [
+        {
+          "name": "output/debian-10.5.0.qcow2",
+          "size": 611945984
+        }
+      ],
+      "artifact_id": "VM",
+      "packer_run_uuid": "f2dc1437-1f49-93a8-0213-bf8f287a3587",
+      "custom_data": null
+    },
+    {
+      "name": "debian",
+      "builder_type": "qemu",
+      "build_time": 1604215996,
+      "files": [
+        {
+          "name": "output/debian-9.5.0.qcow2",
+          "size": 565890560
+        }
+      ],
+      "artifact_id": "VM",
+      "packer_run_uuid": "ba44e130-46e2-0de0-d8b8-772c56f5e89a",
+      "custom_data": null
+    },
+    {
+      "name": "debian",
+      "builder_type": "qemu",
+      "build_time": 1604217253,
+      "files": [
+        {
+          "name": "output/debian-9.4.0.qcow2",
+          "size": 594739200
+        }
+      ],
+      "artifact_id": "VM",
+      "packer_run_uuid": "82824ca2-2803-0ee3-6888-d6b5d96b62a3",
+      "custom_data": null
+    },
+    {
+      "name": "debian",
+      "builder_type": "qemu",
+      "build_time": 1604816275,
+      "files": [
+        {
+          "name": "output/debian-8.11.0.qcow2",
+          "size": 638741504
+        }
+      ],
+      "artifact_id": "VM",
+      "packer_run_uuid": "30c288ba-fd98-89a7-6fe1-55e0c9affc17",
+      "custom_data": null
+    }
+  ],
+  "last_run_uuid": "30c288ba-fd98-89a7-6fe1-55e0c9affc17"
+}

@@ -1,0 +1,173 @@
+{
+  "builds": [
+    {
+      "name": "debian",
+      "builder_type": "qemu",
+      "build_time": 1602512423,
+      "files": [
+        {
+          "name": "output/debian-10.5.0-1.qcow2",
+          "size": 452795904
+        }
+      ],
+      "artifact_id": "VM",
+      "packer_run_uuid": "fc98ef59-7f1c-9ca8-ab47-725be3993975",
+      "custom_data": null
+    },
+    {
+      "name": "debian",
+      "builder_type": "qemu",
+      "build_time": 1602570577,
+      "files": [
+        {
+          "name": "output/debian-10.5.0-1.qcow2",
+          "size": 489553920
+        }
+      ],
+      "artifact_id": "VM",
+      "packer_run_uuid": "39084cd5-6846-ee17-a192-2c3fa1b610f6",
+      "custom_data": null
+    },
+    {
+      "name": "debian",
+      "builder_type": "qemu",
+      "build_time": 1603956013,
+      "files": [
+        {
+          "name": "output/debian-10.x.qcow2",
+          "size": 603622912
+        }
+      ],
+      "artifact_id": "VM",
+      "packer_run_uuid": "13c7a292-8ae9-cbbc-1026-80883208259d",
+      "custom_data": null
+    },
+    {
+      "name": "debian",
+      "builder_type": "qemu",
+      "build_time": 1603964014,
+      "files": [
+        {
+          "name": "output/debian-10.x.qcow2",
+          "size": 580321280
+        }
+      ],
+      "artifact_id": "VM",
+      "packer_run_uuid": "9c6389de-f049-5f55-ff9e-b7465623e70e",
+      "custom_data": null
+    },
+    {
+      "name": "debian",
+      "builder_type": "qemu",
+      "build_time": 1603969589,
+      "files": [
+        {
+          "name": "output/debian-10.6.0.qcow2",
+          "size": 603195392
+        }
+      ],
+      "artifact_id": "VM",
+      "packer_run_uuid": "9bd948f6-1b0c-ecea-1ad1-fed23bdaa4d2",
+      "custom_data": null
+    },
+    {
+      "name": "debian",
+      "builder_type": "qemu",
+      "build_time": 1603973197,
+      "files": [
+        {
+          "name": "output/debian-10.5.0.qcow2",
+          "size": 611945984
+        }
+      ],
+      "artifact_id": "VM",
+      "packer_run_uuid": "f2dc1437-1f49-93a8-0213-bf8f287a3587",
+      "custom_data": null
+    },
+    {
+      "name": "debian",
+      "builder_type": "qemu",
+      "build_time": 1604206624,
+      "files": [
+        {
+          "name": "output/debian-10.4.0.qcow2",
+          "size": 760807424
+        }
+      ],
+      "artifact_id": "VM",
+      "packer_run_uuid": "aafe7662-0c93-1815-aae2-d0847e02dbbf",
+      "custom_data": null
+    },
+    {
+      "name": "debian",
+      "builder_type": "qemu",
+      "build_time": 1604207884,
+      "files": [
+        {
+          "name": "output/debian-10.3.0.qcow2",
+          "size": 796374528
+        }
+      ],
+      "artifact_id": "VM",
+      "packer_run_uuid": "de5a14d9-bde1-5595-e6a8-958fbf7a6c18",
+      "custom_data": null
+    },
+    {
+      "name": "debian",
+      "builder_type": "qemu",
+      "build_time": 1604209221,
+      "files": [
+        {
+          "name": "output/debian-10.2.0.qcow2",
+          "size": 848913920
+        }
+      ],
+      "artifact_id": "VM",
+      "packer_run_uuid": "6a34c3b3-5616-902c-09da-17d342d20426",
+      "custom_data": null
+    },
+    {
+      "name": "debian",
+      "builder_type": "qemu",
+      "build_time": 1604210427,
+      "files": [
+        {
+          "name": "output/debian-10.1.0.qcow2",
+          "size": 711110144
+        }
+      ],
+      "artifact_id": "VM",
+      "packer_run_uuid": "546d293b-0a4c-fb6c-22ae-af81e238dcaa",
+      "custom_data": null
+    },
+    {
+      "name": "debian",
+      "builder_type": "qemu",
+      "build_time": 1604212125,
+      "files": [
+        {
+          "name": "output/debian-10.0.0.qcow2",
+          "size": 613691392
+        }
+      ],
+      "artifact_id": "VM",
+      "packer_run_uuid": "a7949bb2-4ccf-f6a3-7356-470e2243e920",
+      "custom_data": null
+    },
+    {
+      "name": "ubuntu",
+      "builder_type": "qemu",
+      "build_time": 1604832777,
+      "files": [
+        {
+          "name": "output/ubuntu-18.04.qcow2",
+          "size": 681967616
+        }
+      ],
+      "artifact_id": "VM",
+      "packer_run_uuid": "99550ca9-2756-c5d8-903e-d14ce6b1dc47",
+      "custom_data": null
+    }
+  ],
+  "last_run_uuid": "99550ca9-2756-c5d8-903e-d14ce6b1dc47"
+}
