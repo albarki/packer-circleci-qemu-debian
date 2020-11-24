@@ -9,7 +9,7 @@
 ### Quick Start
 
 ```bash
-$ packer build windows-2012-R2-standard.json
+$ packer build windows-2016.json
 ```
 
 ### Windows 2012 R2 Standard
@@ -18,8 +18,6 @@ Alter the admin password and the disk size:
 
 ```
 $ read -p 'Enter password: ' -s password
-$ packer build -var "disk_size=61440" -var "password=$password" windows-2012-R2-standard-amd64.json
+$ packer build -var "disk_size=61440" -var "password=$password" windows-2016.json
 ```
 
-*NOTE*: Password strength requirements are pretty harsh
-http://technet.microsoft.com/en-us/library/cc786468%28v=ws.10%29.aspx
