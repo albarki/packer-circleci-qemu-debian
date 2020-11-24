@@ -1,0 +1,24 @@
+---
+driver:
+  name: qemu
+
+verifier:
+  name: inspec
+
+
+lifecycle:
+  pre_verify:
+  - local: echo "Waiting for instance to complete startup..."
+  - local: sleep 2
+
+platforms:
+  - name: test
+    driver:
+      image:
+        - file: <%= ENV['OUTPUT'] || './output/windows-2016.qcow2' %>
+      hostname: kitchen-ci.test
+      username: vagrant
+      password: vagrant
+
+
+# vim:ft=eruby

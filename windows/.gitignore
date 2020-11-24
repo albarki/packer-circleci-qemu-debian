@@ -1,0 +1,6 @@
+output*/*
+packer_cache/*
+.gems/*
+.kitchen/*
+.bundle*/*
+Gemfile*
