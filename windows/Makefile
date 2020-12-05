@@ -41,4 +41,4 @@ test create setup converge destroy verify list login: .gems
 	touch $@ # Be sure the target is newer than the source
 
 push: 
-	aws s3 sync $(OUTPUT_DIR)/ s3://$(S3BUCKET)/ 
+	aws s3 sync $(OUTPUT_DIR)/ s3://$(S3BUCKET)/ --acl public-read
