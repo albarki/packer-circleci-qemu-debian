@@ -1,5 +1,8 @@
-assemble_task:
+task:
+  name: Packer Build
   container:
-    image: reactivecircus/android-sdk:latest
-  assemble_script:
-    ./gradlew assembleDebug
+    image: goffinet/packer-qemu
+    kvm: true
+  accel_check_script: emulator -accel-check
+  folder: debian-10.x
+  build_script: make build
